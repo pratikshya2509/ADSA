@@ -3,7 +3,6 @@ def createHashTable():
 
     table = []
 
-    # Creating empty buckets
     for i in range(size):
         table.append([])
 
