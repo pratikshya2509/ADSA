@@ -13,7 +13,7 @@ def createHashTable():
     for i in range(size):
         print(i, "\t", table[i])
 
-    n = int(input("\nHow many alphabets do you want to insert? "))
+    n = int(input("\n no. of keys : "))
 
     for i in range(n):
         ch = input("Enter alphabet: ")
