@@ -11,7 +11,7 @@ def createHashTable():
     print("Index\tValues")
 
     for i in range(size):
-        print(i, "\t", table[i])
+        print(i, "  ", table[i])
 
     n = int(input("\n no. of keys : "))
 
@@ -32,10 +32,10 @@ def createHashTable():
 def displayTable(table):
     print("\nFinal Hash Table")
     print("----------------------------")
-    print("Index\tValues")
+    print("Index  : Values")
 
     for i in range(len(table)):
-        print(i, "\t", end="")
+        print(i, " ", end="")
 
         if table[i] == []:
             print("Empty")
