@@ -1,0 +1,26 @@
+n = int(input("How many numbers do you want to enter? "))
+
+numbers = []
+
+for i in range(n):
+    num = int(input("Enter number: "))
+    numbers.append(num)
+
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        if numbers[j] > numbers[j + 1]:
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+
+print("Sorted numbers:", numbers)
+
+total = 0
+sum_of_totals = 0
+
+for num in numbers:
+    total = total + num
+    sum_of_totals = sum_of_totals + total
+
+mrt = sum_of_totals / n
+
+print("Cumulative total:", sum_of_totals)
+print("MRT:", mrt)
